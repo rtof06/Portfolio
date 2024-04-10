@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,800;1,800&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   height: 100vh;
+   box-sizing: border-box;
+   text-align: center;
+   background-color:#001030;
+   color: white;
+   font-family: "Rubik", sans-serif;
+}
+
+.cabecalho {
+   background-color: #e1edfd;
+   padding: 20px 0;
+   display: flex;
+   justify-content: space-between;
+}
+
+.h1-areas-atuacao {
+   color: #001030;
+   font-weight: 300;
+   font-family: "Rubik", sans-serif;
+}
+
+.cabecalho__links {
+   color: black;
+   text-align: center;
+   font-family: "Nunito", sans-serif;
+   font-size: 20px;
+   text-decoration: none;
+   padding-top: 5px;
+   margin: 0 250px;
+}
+
+.main-apresentacao {
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 20px;
+}
+
+.main-apresentacao__conteudo {
+   margin-left: 300px;
+   width: 700px;
+}
+
+.main-apresentacao__conteudo img{
+   width: 100px;
+   justify-content: space-between;
+}
+
+.h1-apresentacao__titulo {
+   font-weight: 800;
+   font-style: italic;
+   font-size: 36px;
+}
+
+.p-apresentacao {
+   font-size: 24px;
+   font-family: "Nunito", sans-serif;
+}
+
+.destaque-titulo {
+   color: #00A6FF;
+}
+
+.redes-sociais {
+   display: flex;
+   justify-content: space-between;
+   padding: 30px 230px;
+}
+
+.foto-ricardo {
+   margin-right: 300px;
+   width: 30%;
+}
+
+footer {
+   margin-top: 80px;
+   position: absolute;
+   display: flex;
+   text-align: end;
+   width: 100%;
+   background-color: #000A1F;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media screen  and (max-widith: 768px) {
+   .body {
+      width: 100%;
+      justify-content: space-around;
+      flex-direction: row;
+   }
+}
