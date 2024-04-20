@@ -3,59 +3,50 @@
 * {
    margin: 0;
    padding: 0;
+   box-sizing: border-box;
 }
 
 body {
    height: 100vh;
-   box-sizing: border-box;
    text-align: center;
    background-color:#001030;
    color: white;
-   font-family: "Rubik", sans-serif;
 }
 
 .cabecalho {
-   background-color: #e1edfd;
-   padding: 20px 0;
    display: flex;
-   justify-content: space-between;
-}
-
-.h1-areas-atuacao {
-   color: #001030;
-   font-weight: 300;
-   font-family: "Rubik", sans-serif;
+   justify-content: space-around;
+   align-items: center;
+   padding: 1% 0;
 }
 
 .cabecalho__links {
-   color: black;
+   color: white;
    text-align: center;
    font-family: "Nunito", sans-serif;
    font-size: 20px;
    text-decoration: none;
-   padding-top: 5px;
-   margin: 0 250px;
+   padding-top: 0.3%;
 }
 
-.main-apresentacao {
+#main-apresentacao {
    display: flex;
    align-items: center;
    flex-direction: row;
    justify-content: space-between;
-   margin: 20px;
+   margin: 1%;
 }
 
 .main-apresentacao__conteudo {
-   margin-left: 300px;
-   width: 700px;
-}
-
-.main-apresentacao__conteudo img{
-   width: 100px;
-   justify-content: space-between;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   margin-left: 15%;
+   width: 40%;
 }
 
 .h1-apresentacao__titulo {
+   font-family: "Rubik", sans-serif;
    font-weight: 800;
    font-style: italic;
    font-size: 36px;
@@ -70,31 +61,35 @@ body {
    color: #00A6FF;
 }
 
+.subtitulo-redes__texto {
+   font-family: "Rubik", sans-serif;
+}
+
 .redes-sociais {
    display: flex;
-   justify-content: space-between;
-   padding: 30px 230px;
+   justify-content: center;
+   gap: 30px;
+}
+
+.redes-sociais__links {
+   width: 10%;
+   min-width: 50px;
+}
+
+.redes-sociais__imagem {
+   width: 100%;
+   min-width: 50px;
 }
 
 .foto-ricardo {
    margin-right: 300px;
-   width: 30%;
+   width: 25%;
+   min-width: 300px;
 }
 
-footer {
-   margin-top: 80px;
-   position: absolute;
+#footer {
    display: flex;
-   text-align: end;
-   width: 100%;
+   justify-content: left;
    background-color: #000A1F;
    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-@media screen  and (max-widith: 768px) {
-   .body {
-      width: 100%;
-      justify-content: space-around;
-      flex-direction: row;
-   }
 }
