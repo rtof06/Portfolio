@@ -7,16 +7,14 @@
 }
 
 body {
-   height: 100vh;
-   text-align: center;
-   background-color:#001030;
+   background-color:#01091b;
    color: white;
 }
 
 .cabecalho {
    display: flex;
-   justify-content: space-around;
-   align-items: center;
+   justify-content: center;
+   gap: 350px;
    padding: 1% 0;
 }
 
@@ -27,6 +25,11 @@ body {
    font-size: 20px;
    text-decoration: none;
    padding-top: 0.3%;
+   transition: 300ms;
+}
+
+.cabecalho__links:hover {
+   color: #00A6FF;
 }
 
 #main-apresentacao {
@@ -35,6 +38,7 @@ body {
    flex-direction: row;
    justify-content: space-between;
    margin: 1%;
+   text-align: center;
 }
 
 .main-apresentacao__conteudo {
@@ -74,6 +78,11 @@ body {
 .redes-sociais__links {
    width: 10%;
    min-width: 50px;
+   transition: 300ms ease-in;
+}
+
+.redes-sociais__links:hover {
+   opacity: 50%;
 }
 
 .redes-sociais__imagem {
@@ -87,9 +96,23 @@ body {
    min-width: 300px;
 }
 
-#footer {
+#rodape {
    display: flex;
-   justify-content: left;
-   background-color: #000A1F;
-   font-family: Georgia, 'Times New Roman', Times, serif;
+   position: fixed;
+   justify-content: center;
+   flex-direction: column;
+   bottom: 0;
+   width: 100%;
+   height: 70px;
+   background-color: #050810;
+   font-family: "Nunito", sans-serif;
+}
+
+.direitos {
+   text-align: center;
+}
+
+.ano {
+   text-align: center;
+   opacity: 50%;
 }
